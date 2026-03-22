@@ -9,7 +9,7 @@ ${BROWSER}    Chrome
 Complete Swag Labs Flow
     [Teardown]    Close Browser
 
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage")
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage");add_argument("--disable-gpu")
     Maximize Browser Window
 
     Input Text      id=username    standard_user

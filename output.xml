@@ -1,114 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.0 on win32)" generated="2026-03-22T18:33:35.779018" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.13.0 on win32)" generated="2026-03-22T21:47:32.548847" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Swag Labs" source="C:\Users\iftak\Downloads\robot-testing-project\tests\test_swag_labs.robot">
 <test id="s1-t1" name="Complete Swag Labs Flow" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:36.560583" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:5500/docs/swag_labs.html'.</msg>
+<msg time="2026-03-22T21:47:33.369615" level="INFO">Opening browser 'Chrome' to base url 'https://iftakherhossen.github.io/robot-testing-project/swag_labs.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-22T18:33:36.559824" elapsed="1.859623"/>
+<status status="PASS" start="2026-03-22T21:47:33.359029" elapsed="5.792263"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-22T18:33:38.421404" elapsed="0.063142"/>
+<status status="PASS" start="2026-03-22T21:47:39.152574" elapsed="0.040793"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:38.488178" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
+<msg time="2026-03-22T21:47:39.195201" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:38.486600" elapsed="0.349928"/>
+<status status="PASS" start="2026-03-22T21:47:39.194299" elapsed="0.334440"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:38.839975" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2026-03-22T21:47:39.530990" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:38.838969" elapsed="0.229641"/>
+<status status="PASS" start="2026-03-22T21:47:39.529862" elapsed="0.229886"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:39.070356" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2026-03-22T21:47:39.764599" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:39.069511" elapsed="0.187978"/>
+<status status="PASS" start="2026-03-22T21:47:39.763835" elapsed="0.215453"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=product-page</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-22T18:33:39.258491" elapsed="1.136316"/>
+<status status="PASS" start="2026-03-22T21:47:39.980266" elapsed="1.164105"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:40.396231" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Add to Cart')])[1]'.</msg>
-<arg>xpath=(//button[contains(text(),'Add to Cart')])[1]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:40.395664" elapsed="0.206801"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:40.603758" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Add to Cart')])[2]'.</msg>
+<msg time="2026-03-22T21:47:41.146070" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Add to Cart')])[2]'.</msg>
 <arg>xpath=(//button[contains(text(),'Add to Cart')])[2]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:40.603213" elapsed="0.203664"/>
+<status status="PASS" start="2026-03-22T21:47:41.145337" elapsed="0.297522"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-22T21:47:41.445528" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Add to Cart')])[3]'.</msg>
+<arg>xpath=(//button[contains(text(),'Add to Cart')])[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-22T21:47:41.444697" elapsed="0.329133"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:40.808296" level="INFO">Clicking element 'xpath=//div[contains(@class,'cart-icon')]'.</msg>
+<msg time="2026-03-22T21:47:41.775555" level="INFO">Clicking element 'xpath=//div[contains(@class,'cart-icon')]'.</msg>
 <arg>xpath=//div[contains(@class,'cart-icon')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:40.807739" elapsed="0.231818"/>
+<status status="PASS" start="2026-03-22T21:47:41.774682" elapsed="0.233121"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=checkout-page</arg>
 <arg>8s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-22T18:33:41.040801" elapsed="0.056128"/>
+<status status="PASS" start="2026-03-22T21:47:42.009407" elapsed="0.054661"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:41.098126" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Remove')])[1]'.</msg>
+<msg time="2026-03-22T21:47:42.065577" level="INFO">Clicking button 'xpath=(//button[contains(text(),'Remove')])[1]'.</msg>
 <arg>xpath=(//button[contains(text(),'Remove')])[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:41.097639" elapsed="0.203412"/>
+<status status="PASS" start="2026-03-22T21:47:42.064885" elapsed="0.244120"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:41.302410" level="INFO">Typing text 'Simon' into text field 'id=first-name'.</msg>
+<msg time="2026-03-22T21:47:42.310326" level="INFO">Typing text 'Simon' into text field 'id=first-name'.</msg>
 <arg>id=first-name</arg>
 <arg>Simon</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:41.301822" elapsed="0.258696"/>
+<status status="PASS" start="2026-03-22T21:47:42.309719" elapsed="0.237124"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:41.561971" level="INFO">Typing text 'Charlie' into text field 'id=last-name'.</msg>
+<msg time="2026-03-22T21:47:42.548221" level="INFO">Typing text 'Charlie' into text field 'id=last-name'.</msg>
 <arg>id=last-name</arg>
 <arg>Charlie</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:41.561389" elapsed="0.288786"/>
+<status status="PASS" start="2026-03-22T21:47:42.547636" elapsed="0.231969"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:41.851631" level="INFO">Typing text '50170' into text field 'id=postal-code'.</msg>
+<msg time="2026-03-22T21:47:42.783166" level="INFO">Typing text '50170' into text field 'id=postal-code'.</msg>
 <arg>id=postal-code</arg>
 <arg>50170</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:41.851016" elapsed="0.255647"/>
+<status status="PASS" start="2026-03-22T21:47:42.781112" elapsed="0.236125"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-22T18:33:42.107943" level="INFO">Clicking button 'xpath=//button[contains(text(),'Complete Purchase')]'.</msg>
+<msg time="2026-03-22T21:47:43.018472" level="INFO">Clicking button 'xpath=//button[contains(text(),'Complete Purchase')]'.</msg>
 <arg>xpath=//button[contains(text(),'Complete Purchase')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-22T18:33:42.107403" elapsed="0.208755"/>
+<status status="PASS" start="2026-03-22T21:47:43.017931" elapsed="0.217028"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Thank You For Your Order!</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-22T18:33:42.317065" elapsed="0.030521"/>
+<status status="PASS" start="2026-03-22T21:47:43.235719" elapsed="0.031002"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-22T18:33:42.348611" elapsed="2.381502"/>
+<status status="PASS" start="2026-03-22T21:47:43.268067" elapsed="2.388552"/>
 </kw>
-<status status="PASS" start="2026-03-22T18:33:36.557045" elapsed="8.174842"/>
+<status status="PASS" start="2026-03-22T21:47:33.355262" elapsed="12.305161"/>
 </test>
-<status status="PASS" start="2026-03-22T18:33:35.782310" elapsed="8.953097"/>
+<status status="PASS" start="2026-03-22T21:47:32.554182" elapsed="13.111181"/>
 </suite>
 <statistics>
 <total>
