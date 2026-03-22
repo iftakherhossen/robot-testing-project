@@ -3,13 +3,13 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}    https://iftakherhossen.github.io/robot-testing-project/docs/swag_labs.html
-${BROWSER}    Chromium
+${BROWSER}    Chrome
 
 *** Test Cases ***
 Complete Swag Labs Flow
     [Teardown]    Close Browser
 
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless")    options=add_argument("--no-sandbox")    options=add_argument("--disable-dev-shm-usage")
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage");binary_location=/usr/bin/chromium-browser
     Maximize Browser Window
 
     # Login
