@@ -23,8 +23,6 @@ jobs:
           # google chrome driver to handle build and deploy error
           sudo apt-get update
           sudo apt-get install -y chromium-browser chromium-chromedriver
-          chromium-browser --version
-          chromedriver --version
           pip install --upgrade pip
           pip install robotframework robotframework-seleniumlibrary
           # or, if you have a requirements.txt:
