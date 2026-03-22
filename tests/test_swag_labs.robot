@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}    http://127.0.0.1:5500/docs/swag_labs.html
+${URL}    https://iftakherhossen.github.io/robot-testing-project/docs/swag_labs.html
 ${BROWSER}    Chrome
 
 *** Test Cases ***
